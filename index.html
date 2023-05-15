@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoes Shop MG</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="images/Logo_NIKE.svg.png">
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header>
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+    <div class="logo">
+        <a href="#" class="logo-text">Nike</a>
+    <img src="Logo_NIKE.svg.png" alt="">
+    </div>
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#products">products</a>
+        <a href="#featured">featured</a>
+        <a href="#review">review</a>
+    </nav>
+
+    <div class="icons">
+        <a href="#" class="fa-solid fa-magnifying-glass search"></a>
+        <a href="#" class="fas fa-heart" id="likedMenu"></a>
+        <a href="#" class="fas fa-shopping-cart"></a>
+        <a href="#" class="fas fa-user " id="user-login"></a>
+    </div>
+
+    <div class="search-form">
+        <input id="searchinput" type="text" id="searchinput" placeholder="Search here...">
+        <label for="searchinput"><a href=""><i id="lapelsearch" class="fa-solid fa-magnifying-glass search"></i></a></label>
+    </div>
+</header>
+<!-- header section ends -->
+<div class="form-container">
+    <div class="form-box form-login" id="form-login">
+        <i class="fa-solid fa-xmark" id="close-login"></i>
+        <form action="">
+            <h2>Login</h2>
+            <div class="input-box">
+                <i id="icon-email" class="fa-regular fa-envelope icon-email"></i>
+                <input id="input-email" class="email" type="email" required placeholder="Enter Your Email">
+            </div>
+            <div class="input-box">
+                <i id="icon-password" class="fa-solid fa-lock"></i>
+                <input id="input-password" class="password" type="password" required placeholder="Enter Your password">
+                <i id="eye" class="fa-regular fa-eye eye"></i>
+            </div>
+            <div class="option-check">
+                <span class="checkbox">
+                  <input  type="checkbox" id="check"  />
+                  <label for="check">Remember me</label>
+                </span>
+                <a href="#" class="forgot_pw">Forgot password?</a>
+            </div>
+            <button class="button">Login Now</button>
+            <div class="login-signup">Don't have an account? <a href="#" id="signup">Signup</a></div>
+        </form>
+    </div>
+    <div class="form-box form-signup">
+        <i class="fa-solid fa-xmark" id="close-login-signup"></i>
+        <form action="">
+            <h2>SignUp</h2>
+            <div class="input-box">
+                <input id="input-name" class="text" type="text" required placeholder="Enter Your First Name">
+            </div>
+            <div class="input-box">
+                <input id="input-name" class="text" type="text" required placeholder="Enter Your Last Name">
+            </div>
+            <div class="input-box">
+                <i class="fa-regular fa-envelope"></i>
+                <input class="email" type="email" required placeholder="Enter Your Email">
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input  class="password" type="password" required placeholder="Enter Your password">
+                <i  class="fa-regular fa-eye eye"></i>
+            </div>
+            <div class="input-box">
+                <i class="fa-solid fa-lock"></i>
+                <input  class="password" type="password" required placeholder="Confirmed Password">
+            </div>
+            <button class="button button-signup">Signup Now</button>
+            <div class="login-signup">Already have an account? <a href="#" id="login">Login</a></div>
+        </form>
+        
+    </div>
+</div>
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+    <div class="slide-container active">
+        <div class="slide">
+            <div class="content">
+                <span>Nike red shoes</span>
+                <h3>NIKE AIR FORCE</h3>
+                <p>Airbags and external struts are what distinguishes it the most This part that was specially designed to give your feet extraordinary comfort that lasts all day</p>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="image">
+                <img src="home-shoe-1.png" class="shoe" alt="">
+                <img src="home-text-1.png" class="text" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <span>Nike blue shoes</span>
+                <h3>NIKE AIR FORCE</h3>
+                <p>The upper mesh provides your feet with comfort, freshness, and coolness by ensuring ventilation, and finally the polished lining to protect your feet from dust and dirt.</p>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="image">
+                <img src="home-shoe-2.png" class="shoe" alt="">
+                <img src="home-text-2.png" class="text" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-container">
+        <div class="slide">
+            <div class="content">
+                <span>Nike yellow shoes</span>
+                <h3>NIKE AIR FORCE</h3>
+                <p>Well known for its super sporty style that goes well with the workout look and is still super matchy with everyday style as boyfriend pants.</p>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+            <div class="image">
+                <img src="home-shoe-3.png" class="shoe" alt="">
+                <img src="home-text-3.png" class="text" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+    <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- service section starts  -->
+
+<section class="service">
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>fast delivery</h3>
+            <p>The delivery services model provides a great speed in fulfilling customer requests, as the delivery service reduces the time it takes to obtain orders, due to its on-demand delivery strategy.</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-undo"></i>
+            <h3>14 days replacements</h3>
+            <p>To exchange and return within the 14-day period from the date of receiving the item without reason, with some exceptions. </p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-headset"></i>
+            <h3>24 x 7 support</h3>
+            <p>Assisting customers in overcoming the problems they face and providing adequate answers to all their inquiries. Receiving, canceling and returning customer orders. Communicating with customers through various means and social media sites.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- service section ends -->
+
+<!-- products section starts  -->
+
+<section class="products" id="products">
+
+    <h1 class="heading"> latest <span>products</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart liked"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img class="img" src="product-1.png" alt="">
+            <div class="content">
+                <h3>Nike Air Max Plus</h3>
+                <div class="price">$120.99 <span>$150.99</span></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart liked"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img class="img" src="product-2.png" alt="">
+            <div class="content">
+                <h3>Nike air max 270</h3>
+                <div class="price">$110.00 <span>$134.00</span></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart liked"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img class="img" src="product-3.png" alt="">
+            <div class="content">
+                <h3>Nike Pegasus Trail</h3>
+                <div class="price">$100.50 <span>$125.00</span></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart liked"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img class="img" src="product-4.png" alt="">
+            <div class="content">
+                <h3>Nike Air Zoom </h3>
+                <div class="price">$129.99 <span>$165.99</span></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart liked"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img class="img" src="product-5.png" alt="">
+            <div class="content">
+                <h3>Nike Flex plus</h3>
+                <div class="price">$145.99 <span>$170.99</span></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="icons">
+                <a href="#" class="fas fa-heart liked"></a>
+                <a href="#" class="fas fa-share"></a>
+                <a href="#" class="fas fa-eye"></a>
+            </div>
+            <img class="img" src="product-6.png" alt="">
+            <div class="content">
+                <h3>NIKE AIR HUARACHE J22</h3>
+                <div class="price">$160.40 <span>$180.50</span></div>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <a href="#" class="btn">add to cart</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- products section ends -->
+
+<!-- featured section starts  -->
+
+<section class="featured" id="featured">
+
+    <h1 class="heading"> <span>featured</span> products </h1>
+
+    <div class="row">
+        <div class="image-container">
+            <div class="small-image">
+                <img src="f-img-1.1.png" class="featured-image-1" alt="">
+                <img src="f-img-1.2.png" class="featured-image-1" alt="">
+                <img src="f-img-1.3.png" class="featured-image-1" alt="">
+                <img src="f-img-1.4.png" class="featured-image-1" alt="">
+            </div>
+            <div class="big-image">
+                <img src="f-img-1.1.png" class="big-image-1" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <h3>new nike airmax shoes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>This highly rated waterproof trail running shoe is built with the same cushioned comfort you love, but provides superior strength, durability and support. Nike PEGASUS Trail 3 GORE-TEX Women's Waterproof Running Shoe</p>
+            <div class="price">$80.99 <span>$120.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="image-container">
+            <div class="small-image">
+                <img src="f-img-2.1.png" class="featured-image-2" alt="">
+                <img src="f-img-2.2.png" class="featured-image-2" alt="">
+                <img src="f-img-2.3.png" class="featured-image-2" alt="">
+                <img src="f-img-2.4.png" class="featured-image-2" alt="">
+            </div>
+            <div class="big-image">
+                <img src="f-img-2.1.png" class="big-image-2" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <h3>new nike airmax shoes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>Built for street running, the perfect thing about the Nike Air Zoom Pegasus 38 is that it's flexible for speed, yet light and comfortable for long runs.</p>
+            <div class="price">$85.99 <span>$125.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="image-container">
+            <div class="small-image">
+                <img src="f-img-3.1.png" class="featured-image-3" alt="">
+                <img src="f-img-3.2.png" class="featured-image-3" alt="">
+                <img src="f-img-3.3.png" class="featured-image-3" alt="">
+                <img src="f-img-3.4.png" class="featured-image-3" alt="">
+            </div>
+            <div class="big-image">
+                <img src="f-img-3.1.png" class="big-image-3" alt="">
+            </div>
+        </div>
+        <div class="content">
+            <h3>new nike airmax shoes</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>Made of light and durable materials The sole of the shoe is flexible and has a medium height, which helps to run comfortably Simple and distinctive sporty design suitable for multiple uses, not just running.</p>
+            <div class="price">$90.00 <span>$130.99</span></div>
+            <a href="#" class="btn">add to cart</a>
+        </div>
+    </div>
+
+</section>
+
+<!-- featured section ends -->
+
+<!-- review section starts  -->
+
+<section class="review" id="review">
+
+    <h1 class="heading"> customer's <span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="feedback-image1.jpg" alt="">
+            <h3>Ahmed Gamal</h3>
+            <p>You agree to indemnify and hold NIKE (and its officers, directors, agents, subsidiaries, joint ventures, employees and third-party service providers, including but not limited to Bazaarvoice, Inc.), harmless from all claims, demands, and damages (actual and consequential) of every kind and nature, known and unknown including reasonable attorneys' fees, arising out of a breach of your representations and warranties set forth above, or your violation of any law or the rights of a third party.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="feedback-image2.jpg" alt="">
+            <h3>Mohamed Ali</h3>
+            <p>For any content that you submit, you grant NIKE, Inc., including its affiliates and subsidiaries, a, perpetual, irrevocable, royalty-free, transferable right and license to use, copy, modify, delete in its entirety, adapt, publish, translate, create derivative works from and/or sell and/or distribute such content and/or incorporate such content into any form, medium, product or technology throughout the world without compensation to you.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="feedback-image3.jpg" alt="">
+            <h3>Amr Ali</h3>
+            <p>All content that you submit may be used at NIKE's sole discretion. NIKE reserves the right to change, condense or delete any content on NIKE's website that NIKE deems, in its sole discretion, to violate the content guidelines or any other provision of these Terms of Service. NIKE does not guarantee that you will have any recourse to edit or delete any content you have submitted. Ratings and written comments are generally posted within two to four business days.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- review section ends -->
+
+<!-- newsletter section starts  -->
+
+<section class="newsletter">
+
+    <div class="content">
+        <h3>monthly newsletter</h3>
+        <p>For complaints and suggestions, we are always happy with your suggestions, as they benefit us in always developing for the better</p>
+        <form action="">
+            <input type="email" placeholder="enter your email" class="box">
+            <input type="submit" value="send" class="btn">
+        </form>
+    </div>
+
+</section>
+
+<!-- newsletter section ends -->
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>our stores</h3>
+            <a href="#">india</a>
+            <a href="#">USA</a>
+            <a href="#">japan</a>
+            <a href="#">paris</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#">home</a>
+            <a href="#">products</a>
+            <a href="#">featured</a>
+            <a href="#">review</a>
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#">my account</a>
+            <a href="#">my favorite</a>
+            <a href="#">my orders</a>
+            <a href="#">newsletter</a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">twitter</a>
+            <a href="#">instagram</a>
+            <a href="#">linkedin</a>
+        </div>
+
+        <div class="credit">created by <span> Mohamed Gamal </span> | all rights reserved</div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- custom js file link  -->
+<script src="index.js"></script>
+    
+</body>
+</html>
